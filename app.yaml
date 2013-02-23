@@ -1,0 +1,39 @@
+application: mealpha09a
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+
+- url: /models
+  static_dir: models
+
+- url: /textures
+  static_dir: textures
+
+- url: /css
+  static_dir: css
+
+- url: /img
+  static_dir: img
+
+- url: /js
+  static_dir: js
+  
+- url: /fonts
+  static_dir: fonts
+
+- url: /eden.*
+  script: EdenEden.app
+  
+- url: /cic.*
+  script: EdenCIC.app
+
+- url: /.*
+  static_files: main.html
+  upload: main.html
+
+libraries:
+- name: jinja2
+  version: latest

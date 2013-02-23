@@ -1,0 +1,60 @@
+<html>
+<head>
+	<link href="css/dark-hive/jquery-ui-1.10.0.custom.css" rel="stylesheet">
+	<link href="fonts/stylesheet.css" rel="stylesheet">
+	<link href="css/chatbox.css" rel="stylesheet">
+	
+	<script src="js/lib/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.1.0.min.js"></script>
+	<script src="js/lib/jquery-ui-1.10.0.custom.js"></script>
+	<script src="js/lib/jquery.livequery.js"></script>
+	<script src="http://raw.github.com/mrdoob/stats.js/master/build/stats.min.js"></script>
+	
+	
+	
+	<script src="js/EdenSession.js"></script>
+	<script src="js/EdenNav.js"></script>
+	<script src="js/EdenGlass.js"></script>
+	<script src="js/EdenChatbox.js"></script>
+	
+	
+
+</head>
+	
+<body>
+	<script src='/_ah/channel/jsapi'></script>
+	<audio id="PingSound" style="display: none;"></audio>
+	
+	<div id="dialog_window_minimized_container"></div>
+	
+<!-- 	<input type='textbox' id='scatter'> -->
+	
+	<table class="chatWrapper" cellpadding="0" cellspacing="0" hidden>
+		<tr>
+	    	<td width="20" class="chatAnchor"></td>
+	        <td width="*">
+	       	  <div class="chatActions">
+	            	<select name="chatChannel" class="chatChannel" id="chatChannel1">
+	            	  <option value="Global" selected>Global</option>
+	            	  <option value="Local">Local</option>
+	            	  <option value="Loopback">Loopback</option>
+	           	  </select>
+	              <input name="chatInputMsg" class="chatInputMsg" id="chatInputMsg1" type="text" value="enter message">
+	          </div>
+	          <div class="chatBox">
+	          	<div class="tabWrapper">
+	            	<div class="tabs">General</div>
+	            </div>
+	            <div class="messages"></div>
+	          </div>   
+	        </td>
+	        <td width="25" class="chatSettings"><div class="chatPreferences"></div></td>
+	    </tr>
+	</table>
+
+	<script src="js/lib/three.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/EdenMain.js"></script>
+
+</body>
+</html>
